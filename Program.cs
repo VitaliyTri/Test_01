@@ -11,14 +11,17 @@ if (count == 0)
 {
     Console.WriteLine("[]");
 }
-string[] newArray = new string[count];
-int j = 0;
-for (int i = 0; i < array.Length; i++)
+else
 {
-    if (array[i].Length <= 3 && j < count)
+    string[] newArray = new string[count];
+    int j = 0;
+    for (int i = 0; i < array.Length; i++)
     {
-        newArray[j] = array[i];
-        Console.Write(newArray[j] + "\t");
-        j++;
+        if (array[i].Length <= 3 && j < count)
+        {
+            newArray[j] = array[i];
+            Console.Write(newArray[j] + "\t");
+            j++;
+        }
     }
 }
