@@ -7,6 +7,10 @@ for (int i = 0; i < array.Length; i++)
         count++;
     }
 }
+if (count == 0)
+{
+    Console.WriteLine("[]");
+}
 string[] newArray = new string[count];
 int j = 0;
 for (int i = 0; i < array.Length; i++)
